@@ -1,6 +1,6 @@
 .popular-image {
   width: 150px;
-  margin: 10px;
+  margin: auto;
 }
 @media screen and (max-width: 768px) {
   .popular-image {

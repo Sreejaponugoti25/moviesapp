@@ -7,6 +7,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.spinner-background {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 90vh;
+}
 .spiderman-container {
   width: 100%;
   background-size: cover;

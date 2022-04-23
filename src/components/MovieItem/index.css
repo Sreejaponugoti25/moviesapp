@@ -5,6 +5,14 @@
   margin-top: 0px;
   padding-bottom: 30px;
 }
+.spinner-background {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
 
 .movies-details-top-container {
   display: flex;
