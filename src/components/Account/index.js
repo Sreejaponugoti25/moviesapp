@@ -1,5 +1,5 @@
 import MovieContext from '../../context/MovieContext'
-import Header from '../Header'
+import NavBar from '../NavBar'
 import Footer from '../Footer'
 
 import './index.css'
@@ -18,7 +18,7 @@ const Account = props => (
       return (
         <>
           <div className="account-container" testid="account">
-            <Header />
+            <NavBar />
             <div className="account-container-2">
               <h1>
                 Account
@@ -26,7 +26,7 @@ const Account = props => (
               </h1>
 
               <div className="account-element">
-                <p className="header-element">Member ship</p>
+                <p className="navBar-element">Member ship</p>
                 <div>
                   <p>{username}@gmail.com</p>
                   <p>Password: {hiddenPassword} </p>
@@ -35,7 +35,7 @@ const Account = props => (
               <hr />
 
               <div className="account-element">
-                <p className="header-element">Plan Details</p>
+                <p className="NavBar-element">Plan Details</p>
                 <div>
                   <p>Premium</p>
                   <p className="ultra-hd">Ultra HD</p>

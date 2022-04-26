@@ -54,7 +54,7 @@ class MovieItem extends Component {
     const jwtToken = Cookies.get('jwt_token')
     const options = {
       method: 'GET',
-      headers: {
+      navBars: {
         Authorization: `Bearer ${jwtToken}`,
       },
     }

@@ -1,6 +1,6 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
-import Header from '../Header'
+import NavBar from '../NavBar'
 import Trending from '../Trending'
 
 import './index.css'
@@ -33,7 +33,7 @@ class Home extends Component {
     const jwtToken = Cookies.get('jwt_token')
     const options = {
       method: 'GET',
-      headers: {
+      navBars: {
         Authorization: `Bearer ${jwtToken}`,
       },
     }
@@ -63,12 +63,12 @@ class Home extends Component {
     const renderSuccessView = () => {
       const {allTrendingVideos} = this.state
 
-      const homeHeaderItem =
+      const homeNavBarItem =
         allTrendingVideos[Math.floor(Math.random() * allTrendingVideos.length)]
 
-      const backgroundImage = homeHeaderItem.backdropPath
-      const titleOfHeader = homeHeaderItem.title
-      const overviewOfHeader = homeHeaderItem.overview
+      const backgroundImage = homeNavBarItem.backdropPath
+      const titleOfNavBar = homeNavBarItem.title
+      const overviewOfNavBar = homeNavBarItem.overview
 
       return (
         <div
@@ -79,10 +79,10 @@ class Home extends Component {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <Header />
-          <div className="home-header-content">
-            <h1 className="movie-details-name">{titleOfHeader}</h1>
-            <p className="movie-details-description">{overviewOfHeader}</p>
+          <NavBar />
+          <div className="home-navBar-content">
+            <h1 className="movie-details-name">{titleOfNavBar}</h1>
+            <p className="movie-details-description">{overviewOfNavBar}</p>
             <button type="button" className="movies-details-play-button">
               Play
             </button>

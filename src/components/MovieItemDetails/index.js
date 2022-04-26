@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import Header from '../Header'
+import NavBar from '../NavBar'
 
 import MovieContext from '../../context/MovieContext'
 import Footer from '../Footer'
@@ -17,7 +17,7 @@ class MovieItemDetails extends Component {
           return (
             <>
               <div className="home-container">
-                <Header />
+                <NavBar />
                 <MovieItem />
               </div>
               <Footer />

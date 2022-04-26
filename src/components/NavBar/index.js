@@ -8,7 +8,7 @@ import MovieContext from '../../context/MovieContext'
 
 import './index.css'
 
-class Header extends Component {
+class NavBar extends Component {
   state = {isMenu: false}
 
   render() {
@@ -18,14 +18,14 @@ class Header extends Component {
       <MovieContext.Consumer>
         {value => {
           const {cartList} = value
-          console.log('Header', cartList)
+          console.log('NavBar', cartList)
 
           const clickToClose = () => {
             this.setState(prevState => ({isMenu: !prevState.isMenu}))
           }
 
           return (
-            <nav className="nav-header" testid="header">
+            <nav className="nav-NavBar" testid="NavBar">
               <div className="nav-content">
                 <div className="nav-bar-large-container">
                   <Link to="/home">
@@ -126,4 +126,4 @@ class Header extends Component {
     )
   }
 }
-export default withRouter(Header)
+export default withRouter(NavBar)

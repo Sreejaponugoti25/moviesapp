@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import Header from '../Header'
+import NavBar from '../NavBar'
 
 import MovieContext from '../../context/MovieContext'
 import Footer from '../Footer'
@@ -19,7 +19,7 @@ class Popular extends Component {
           return (
             <>
               <div className="home-container" testid="popular">
-                <Header />
+                <NavBar />
                 <PopularItem />
                 <Footer />
               </div>

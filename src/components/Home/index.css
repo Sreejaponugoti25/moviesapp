@@ -34,12 +34,12 @@
   }
 }
 
-.home-header-content {
+.home-navBar-content {
   padding: 60px;
 }
 
 @media screen and (max-height: 768px) {
-  .home-header-content {
+  .home-navBar-content {
     padding: 30px;
   }
 }

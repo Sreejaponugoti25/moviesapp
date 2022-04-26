@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import Header from '../Header'
+import NavBar from '../NavBar'
 
 import MovieContext from '../../context/MovieContext'
 import Footer from '../Footer'
@@ -19,7 +19,7 @@ class SearchRoute extends Component {
 
           return (
             <div className="search-main-container" testid="searchRoute">
-              <Header />
+              <NavBar />
               <div className="search-container">
                 <SearchElement />
               </div>

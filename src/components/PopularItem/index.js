@@ -33,7 +33,7 @@ class PopularItem extends Component {
     const options = {
       method: 'GET',
 
-      headers: {
+      navBars: {
         Authorization: `Bearer ${jwtToken}`,
       },
     }
